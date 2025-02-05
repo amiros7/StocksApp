@@ -1,85 +1,98 @@
-# Stock Search Library
+# Seminar Project
 
-A powerful Android library that enables users to search for stock data, view price action charts, and fetch detailed company profiles. The library provides real-time stock market insights with an intuitive UI and seamless API integration.
+The mstocklib is an Android-based application integrated with an API service designed to manage and manipulate stock-related data. Users can interact with the app to search, view stock prices, analyze candlestick charts, and fetch company information. The project consists of two main components:
 
-## Features
 
-- Stock Search: Search for stocks by ticker symbol.
-- Candlestick Chart: Display stock price movements using a candlestick chart.
-- Historical Data Fetching: Retrieve historical stock data within a specified date range.
-- Company Information: View company details, including description, logo, and full name.
-- Customizable Time Frames: Choose between daily, weekly, and monthly price movements.
-- Chart Interactions: Zoom in/out and long-press to reset the chart.
+## The Mstocklib Android Application
+A mobile app that communicates with the StockAPI to provide functionalities such as searching stocks by ticker, displaying candlestick charts, and retrieving historical data.
 
-## Technology Stack
+## The StockAPI
+A backend service built using Node.js and MongoDB to store, retrieve, and manipulate stock data.
 
-- Android 
-- MPAndroidChart (for candlestick chart visualization)
-- Retrofit/HttpClient (for API communication)
-- MongoDB Atlas (for data persistence)
-- Node.js (Backend)
-- Express.js & Flask (Backend Services)
+The API supports operations such as:
 
-## Prerequisites
+Searching stocks by ticker symbol
+Fetching historical stock data
+Retrieving company information (e.g., name, description, and logo)
+Displaying candlestick charts for stock price movements
+This is a full-stack application combining a Node.js API backend, MongoDB database, and an Android native application.
 
-- Android Studio installed
-- MongoDB Atlas or local MongoDB installation
-- Node.js & npm (for backend service)
-- Git (for cloning the repository)
 
-## Installation
+## Project Overview
 
-1. Clone the repository:
-```bash
-git clone https://github.com/amiros7/StocksApp.git
-cd StocksApp
+This project consists of three main components:
+
+A RESTful API built with Node.js
+Database management with MongoDB
+Android native application (Java)
+
+
+## Tech Stack
+
+### Backend
+- Node.js
+- MongoDB Atlas
+- Render (Deployment)
+
+### Frontend/Mobile
+- Android Studio
+- Java
+- Android SDK
+
+## Installation & Setup
+
+### Prerequisites
+- Node.js
+- MongoDB Atlas
+- Android Studio
+- VS Code (or preferred IDE for JavaScript)
+- Render
+
+### MongoDB Setup
+
+1. Install MongoDB Compass.
+2. Connect to your MongoDB instance using the connection string
+
+### Android App Setup
+
+1. Open Android Studio
+2. Open the `android` directory as a project
+3. Sync Gradle files
+4. Update the API base URL in `constants.java` or configuration file
+
+## Running the Project
+
+
+### Running the Android App
+
+1. Open the project in Android Studio
+2. Select your target device (emulator or physical device)
+3. Click the "Run" button or press Shift + F10
+
+
+
+4. Update the API URL in your Android application to point to the deployed Vercel URL
+
+## API Endpoints
+
+Document your API endpoints here. For example:
+
 ```
-## Setup Android Project:
-
-- Open Android Studio and load the project.
-
-- Sync Gradle dependencies.
-
-
-### POST Endpoints
-
-- `POST /add_name` - Add a new name to the database
-  ```json
-  {
-    "_id": "679dee78d2079d2731838bcf",
-    "ticker": "MSFT",
-    "date": "2025-02-01T09:50:48.864+00:00",
-  }
-  ```
+GET /api/items - Retrieve all items
+POST /api/items - Create new item
+GET /api/items/:id - Retrieve specific item
+PUT /api/items/:id - Update specific item
+DELETE /api/items/:id - Delete specific item
+```
 
 
-## Error Handling
+## License
 
-The API includes comprehensive error handling:
+This project is licensed under the MIT License - see the LICENSE file for details
+Copyright (c) 2024 Yarin Manoah
 
-- 200: Successful operation
-- 201: Resource created successfully
-- 400: Bad request / Invalid input
-- 404: Resource not found
-- 500: Server error
-
-## Deployment
-
-This project supports deployment on Render.
-
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Support
-
-For support, please open an issue in the GitHub repository.
 
 ## Contact
 
-Amir Monayer | a.monayer17@gmail.com
+Amir Monayer - a.monayer17@gmail.com
+Project Link: https://github.com/amiros7/StocksApp.git
