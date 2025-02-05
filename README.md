@@ -1,8 +1,8 @@
-## Stock Search Library 
+# Stock Search Library 
 
 A powerful Android library that enables users to search for stock data, view price action charts, and fetch detailed company profiles. The library provides real-time stock market insights with an intuitive UI and seamless API integration.
 
-# Features
+## Features
 
 Stock Search: Search for stocks by ticker symbol.
 
@@ -15,7 +15,7 @@ Company Information: View company details, including description, logo, and full
 Customizable Time Frames: Choose between daily, weekly, and monthly price movements.
 
 Chart Interactions: Zoom in/out and long-press to reset the chart.
-Technology Stack
+## Technology Stack
 
 Android (Java, XML)
 
